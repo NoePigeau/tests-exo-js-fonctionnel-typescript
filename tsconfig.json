@@ -1,0 +1,17 @@
+{
+  "include": ["./src/**/*"],
+  "exclude": ["mode_modules", "test" ],
+  "compilerOptions": {
+    "target": "es2016",                                 
+    "module": "commonjs", 
+
+    "rootDir": "./src",                                  
+    "outDir": "./dist",      
+    
+    "esModuleInterop": true,   
+
+    "strict": true,                                      
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true                           
+  },
+}
