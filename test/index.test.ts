@@ -1,5 +1,6 @@
 import { arrayDiff } from "../src/exo-fonctionnel/array-diff";
 import { findTwins, findTwinsBis } from "../src/exo-fonctionnel/find-twins"
+import { smaller } from "../src/exo-fonctionnel/smaller"
 
 describe("Test array diff:", () => {
 
@@ -27,6 +28,20 @@ describe("Test finds twins:", () => {
     //test 2
     it("should return 8 for test 2", () => {
         expect(findTwinsBis([ 8, 3, 6, 34, 7, 8, 2])).toBe(8);
+    }); 
+    
+})
+
+describe("Test smaller:", () => {
+
+    //test 1
+    it("should return 8 for test 1", () => {
+        expect(smaller([ 8, 3, 6, 34, 7, 8, 2], 3)).toBe(3);
+    }); 
+
+    //test 2
+    it("should return 8 for test 2", () => {
+        expect(smaller([ 8, 3, 6, 34, 7, 8, 2], 2)).toBe(1);
     }); 
     
 })
