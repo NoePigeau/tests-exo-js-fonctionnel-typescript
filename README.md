@@ -12,6 +12,12 @@ npm install
 npm run build
 ```
 
+### run index
+
+```bash
+npm run dev
+`
+
 ### test all exercices
 
 ```bash
