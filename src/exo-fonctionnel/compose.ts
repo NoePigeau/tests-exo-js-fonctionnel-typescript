@@ -10,11 +10,11 @@
  */
 
 export const compose = (callbacks: Array<Function>, input: any): any => {
-    if(callbacks.length == 0 || callbacks === null) {
+    if (callbacks.length == 0 || callbacks === null) {
         return input
     }
 
     const [callback, ...remainingsCallbacks] = callbacks
 
-    return compose( remainingsCallbacks, callback(input))
+    return compose(remainingsCallbacks, callback(input))
 }
