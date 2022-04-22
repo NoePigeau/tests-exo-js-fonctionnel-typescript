@@ -8,7 +8,7 @@
   },
   "scripts": {
     "build": "tsc -w",
-    "dev": "nodemon dist/index.js",
+    "dev": "nodemon",
     "test": "jest"
   }
 }
